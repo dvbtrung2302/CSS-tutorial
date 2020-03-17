@@ -1,0 +1,96 @@
+* {
+	font-family: sans-serif;
+}
+
+.zing-chart-item {
+	background-color: #DDD;
+	width: auto;
+	height: 70px;
+	padding: 0 15px;
+}
+
+.zing-chart-item .wrapper {
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+
+}
+
+.zing-chart-item .number {
+	color: #4a90e2;
+	font-size: 22px;
+}
+
+.banner .background {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin: 0 10px;
+}
+
+.background .background-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	position: absolute;
+}
+
+.background .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+}
+
+.overlay .play-button {
+	width: 100%;
+	height: 100%;
+	background-image: url('./picture/play-button-arrowhead.svg');
+	background-position: center;
+	background-size: 15px;
+	background-repeat: no-repeat;
+}
+
+.zing-chart-item .info {
+	margin-top: -12px;
+	flex-grow: 1;
+}
+
+.info .title {
+	color: #fcfcfc;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.info .singer {
+	color: #a0a0a0;
+	font-size: 13px;
+}
+
+.zing-chart-item .percent {
+	font-size: 15px;
+	color: #4a90e2;
+}
+
+.zing-chart-item .wrapper:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 5px;
+}
+
+.zing-chart-item .wrapper:hover .title {
+	color: #6e55b4;
+}
+
+.zing-chart-item .wrapper:hover .overlay {
+	opacity: 1;
+}
+
+.info .singer:hover {
+	color: #6e55b4;
+}

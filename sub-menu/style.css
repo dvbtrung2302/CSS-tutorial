@@ -1,0 +1,32 @@
+.sub-menu-container {
+	border: 1px solid #DDD;
+	width: 100%;
+	display: flex;
+}
+
+.sub-menu-container .sub-menu {
+	padding: 0;
+	flex-grow: 1;
+}
+
+.sub-menu-container .sub-menu li {
+	list-style-type: none;
+}
+
+.sub-menu-container .sub-menu li .hover-element, .title {
+	text-decoration: none;
+	display: block;
+	color: #32323d;
+	padding: 5px 10px;
+}
+
+.sub-menu li .hover-element:hover {
+	color: #65509e;
+	background-color: #efefef;
+}
+
+.sub-menu .title {
+	font-weight: bold;
+	text-decoration: none;
+	color: #32323d;
+}

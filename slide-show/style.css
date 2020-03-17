@@ -1,0 +1,115 @@
+.slideshow-container {
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.slides {
+  grid-column: 3/11;
+  display: flex;
+  position: relative;
+  height: auto;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.slides .slide {
+  width: 100%;    
+  flex-shrink: 0;                          
+/*  display: flex;   */     
+  animation: slide-it 30s ease-out infinite;
+  animation-timing-function: ease-out;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+@keyframes slide-it {
+   0%,19%   { transform: translateX(0%); }
+   20%,39% { transform: translateX(-100%); }
+   40%,59% { transform: translateX(-200%); }
+   60%,79% { transform: translateX(-300%); }
+   80%,99% { transform: translateX(-400%); }
+ }
+
+/*===========SUB SLIDE SHOW=================*/
+
+.sub-slideshow-container{
+  position: absolute;
+  display: flex;
+  margin: 0;
+  padding: 0; 
+  bottom: -80px;
+  right: 20px;
+  z-index: 1;
+}
+
+.sub-slideshow-container .img {
+  list-style: none;
+  line-height: 0;
+  transition-timing-function: ease-out;
+}
+
+.sub-slideshow-container .img a{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+}
+.sub-slideshow-container .img a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sub-slideshow-container .img a:hover {
+  border: 2px solid #FFF;
+}
+
+.slides .sub {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.sub-slideshow-container .img-1 {
+  transition: transform 0.1s;
+  transition-timing-function: ease-out;
+}
+
+.sub-slideshow-container .img-2 {
+  transition: transform 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.sub-slideshow-container .img-3 {
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.sub-slideshow-container .img-4 {
+  transition: transform 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.sub-slideshow-container .img-5 {
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.slides:hover .img-1, .slides:hover .img-2, 
+.slides:hover .img-3, .slides:hover .img-4,
+.slides:hover .img-5  {
+  transform: translate(0, -100px);
+}
+
+
+/*========HOVER EFFECT FOR SUB SLIDE SHOW============*/

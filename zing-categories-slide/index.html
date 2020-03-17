@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./icon/css/all.css">
+</head>
+<body>
+	<div class="zing-categories-slide">
+		<div class="zing-categories-title">
+			<a href="#" class="title-wrapper">
+				<span class="title-text">
+					Chủ Đề & Thể Loại
+				</span>
+				<i class="fal fa-angle-right fa-2x"></i>
+			</a>
+		</div>
+		<a href="#" class="control">
+			<i id="control-back"class="fal fa-angle-left fa-2x"></i>
+			<i id="control-next" class="fal fa-angle-right fa-2x" style="color:#32323d;"></i>
+		</a>
+		<div id="z-categories-slider" class="zing-categories-items">
+			<div class="zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/categories-pic.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Trending</span>
+				</a>
+			</div>
+			<div class="zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-1.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Nhạc Việt</span>
+				</a>
+			</div>
+			<div class="zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-2.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Nhạc Âu Mỹ</span>
+				</a>
+			</div>
+			<div class="zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-3.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Nhạc Hàn</span>
+				</a>
+			</div>
+			<div class="zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-4.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Giáng Sinh</span>
+				</a>
+			</div>
+			<div class="z-fade zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-5.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Nhạc Hoa</span>
+				</a>
+			</div>
+			<div class="z-fade zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-6.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">Trữ Tình & Bolero</span>
+				</a>
+			</div>
+			<div class="z-fade zing-categories-item">
+				<a href="#" class="zing-categories-wrapper">
+					<img class="zing-categories-image"src="./picture/cate-pic-7.jpg">
+					<span class="overlay">
+					</span>
+					<span class="categories-text">EDM</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var nextButton = document.getElementById('control-next');
+		var backButton = document.getElementById('control-back');
+		var slides = document.getElementsByClassName('zing-categories-item')
+		nextButton.addEventListener('click', nextSlide);
+		backButton.addEventListener('click', backSlide);
+		nextButton.addEventListener('mouseover', mouseOverNext);
+		nextButton.addEventListener('mouseout', mouseOutNext);
+		backButton.addEventListener('mouseover', mouseOverBack);
+		backButton.addEventListener('mouseout', mouseOutBack);
+
+		function nextSlide() {
+			for (var slide of slides ) {
+				slide.style.transform = 'translateX(-330%)';
+				slide.style.opacity = '1';
+			}
+			nextButton.style.color = '#e5e5e5';
+			nextButton.style.cursor = 'default';
+			backButton.style.color = '#32323d';
+			backButton.style.cursor = 'pointer';
+		}
+
+		function backSlide() {
+			for (var slide of slides ) {
+				slide.style.transform = 'translateX(0)';
+			}
+			backButton.style.color = '#e5e5e5';
+			backButton.style.cursor = 'default';
+			nextButton.style.color = '#32323d';
+			nextButton.style.cursor = 'pointer';
+		}
+
+		function mouseOverNext() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(229, 229, 229)'){
+				nextButton.style.color = '#e5e5e5';
+			} else {
+				nextButton.style.color = '#6335b4';
+			}
+		}
+
+		function mouseOutNext() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(229, 229, 229)'){
+				nextButton.style.color = '#e5e5e5';
+			} else {
+				nextButton.style.color = '#32323d';
+			}
+		}
+
+		function mouseOverBack() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(50, 50, 61)'){
+				backButton.style.color = '#e5e5e5';
+			} else {
+				backButton.style.color = '#6335b4';
+			}
+		}
+
+		function mouseOutBack() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(50, 50, 61)'){
+				backButton.style.color = '#e5e5e5';
+			} else {
+				backButton.style.color = '#32323d';
+			}
+		}
+	</script>
+</body>
+</html>

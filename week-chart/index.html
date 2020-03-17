@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="week-chart">
+		<div class="real-time">
+			<div class="top">
+				<a href="#" class="zingchart-button">
+					#zingchart
+				</a>
+				<div class="day-and-time" id="timer"></div>
+				<a href="#" class="play-all-button">
+					<div class="play-button"></div>
+					<div class="text">Nghe tất cả</div>
+				</a>
+			</div>
+			<div class="center"></div>
+			<div class="bottom">
+				<span>12</span>
+				<span>14</span>
+				<span>16</span>
+				<span>18</span>
+				<span>20</span>
+				<span>22</span>
+				<span>00</span>
+				<span>02</span>
+				<span>04</span>
+				<span>06</span>
+				<span>08</span>
+				<span>10</span>
+			</div>
+		</div>
+		<div class="items">
+			<div class="zing-chart-item">
+				<div class="number" style="color:#4a90e2;">01</div>
+				<a href="#" class="banner">
+					<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+					<span class="overlay">
+					</span>
+					<span class="play-button"></span>
+				</a>
+				<div class="info">
+					<div class="title-wrapper">
+						<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+					</div>
+					<div class="artist-wrapper">
+						<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+					</div>
+				</div>
+				<div class="percent" style="color:#4a90e2;">39%</div>
+			</div>
+			<div class="zing-chart-item">
+				<div class="number" style="color:#50e3c2;">02</div>
+				<a href="#" class="banner">
+					<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+					<span class="overlay">
+					</span>
+					<span class="play-button"></span>
+				</a>
+				<div class="info">
+					<div class="title-wrapper">
+						<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+					</div>
+					<div class="artist-wrapper">
+						<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+					</div>
+				</div>
+				<div class="percent" style="color:#50e3c2;">35%</div>
+			</div>
+			<div class="zing-chart-item">
+				<div class="number" style="color:#e4340d;">03</div>
+				<a href="#" class="banner">
+					<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+					<span class="overlay">
+					</span>
+					<span class="play-button"></span>
+				</a>
+				<div class="info">
+					<div class="title-wrapper">
+						<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+					</div>
+					<div class="artist-wrapper">
+						<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+					</div>
+				</div>
+				<div class="percent" style="color:#e4340d;">26%</div>
+			</div>
+			<div class="zing-chart-item">
+				<div class="number">04</div>
+				<a href="#" class="banner">
+					<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+					<span class="overlay">
+					</span>
+					<span class="play-button"></span>
+				</a>
+				<div class="info">
+					<div class="title-wrapper">
+						<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+					</div>
+					<div class="artist-wrapper">
+						<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+					</div>
+				</div>
+			</div>
+			<div class="zing-chart-item">
+				<div class="number">05</div>
+				<a href="#" class="banner">
+					<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+					<span class="overlay">
+					</span>
+					<span class="play-button"></span>
+				</a>
+				<div class="info">
+					<div class="title-wrapper">
+						<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+					</div>
+					<div class="artist-wrapper">
+						<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<a href="#">Xem tất cả</a>
+			</div>
+		</div>
+	</div>
+	<div class="countries">
+		<a href="#" class="country">
+			<img class="country-song" src="./picture/song-vn-2x.jpg">
+		</a>
+		<a href="#" class="country res-country">
+			<img class="country-song" src="./picture/song-vn-2x.jpg">
+		</a>
+		<a href="#" class="country">
+			<img class="country-song" src="./picture/song-vn-2x.jpg">
+		</a>
+		<a href="#" class="country res-country" style="margin-right: 0;">
+			<img class="country-song" src="./picture/song-vn-2x.jpg">
+		</a>
+	</div>
+	<script type="text/javascript">
+		startTime();
+		function startTime() {
+			var today = new Date();
+
+			var day = today.getDate(); 
+			var month = today.getMonth(); 
+			var year = today.getFullYear(); 
+			var h = today.getHours(); 
+			var m = today.getMinutes();
+
+			day = checkTime(day);
+			h = checkTime(h);
+			document.getElementById('timer').innerHTML = day + '/' + month + '/' + year + ' ' + h + ':' + m; 
+		}
+
+		function checkTime(i) {
+			if(parseInt(i) < 10) {
+				i = '0' + i;
+			}
+			return i;
+		}
+
+	</script>
+</body>
+</html>

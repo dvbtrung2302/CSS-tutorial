@@ -1,0 +1,92 @@
+* {
+  font-family: sans-serif;
+}
+
+.zing-chart-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.zing-chart-item .number {
+  font-size: 20px;
+}
+
+.zing-chart-item .banner {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  position: relative;
+}
+
+.banner .zing-chart-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.banner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  border-radius: 3px;
+}
+
+.banner .play-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('./picture/play-button-arrowhead.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+  opacity: 0;
+  border-radius: 3px;
+}
+
+.zing-chart-item .info {
+  position: relative;
+  flex-grow: 1;
+}
+
+.info .title-wrapper, .info .artist-wrapper {
+  display: inline-block;  
+}
+
+.info .title-wrapper {
+  width: 100%;
+  text-decoration: none;
+}
+
+.title-wrapper .title {
+  cursor: default;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.artist-wrapper .artist {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.zing-chart-item .percent {
+  font-size: 15px;
+}
+
+.zing-chart-item:hover {
+  background-color: rgba(255,255,255,.15);
+  border-radius: 3px;
+}
+
+.zing-chart-item:hover .overlay, .zing-chart-item:hover .play-button {
+  opacity: 1;
+}

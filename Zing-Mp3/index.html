@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./layout.css">
+	<link rel="stylesheet" type="text/css" href="./components.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="top-bar">
+				<div class="zing-logo-container">
+					<a href="#">
+						<div class="zing-logo"></div>
+					</a>
+				</div>
+				<div class="search-bar">
+					<div class="search-input">
+						<form>
+							<i class="fas fa-search" style="color: #8d9298;"></i>
+							<input class="search-content" type="text" name="search" placeholder="Nhập tên bài hát, ca sĩ hoặc mv....">
+						</form>
+					</div>
+				</div>
+				<div class="login-bar">
+					<div class="container-login">
+						<div class="login-bar">
+							<div>
+								<a href="#" >
+									<img class="avatar" src="./picture/avatar.png">
+								</a>
+							</div>
+							<div>
+								<a href="#" class="text">Đăng Nhập</a>
+							</div>
+							<div class="dropdown-icon">
+								<div id="change-icon">
+									<i class="fas fa-angle-down" style="cursor: pointer;" id="click-btn"></i>
+								</div>
+							</div>
+						</div>
+						<div class="sub-login" id="sub-menu-login">
+							<div class="brightness-container">
+								<a href="#" class="brightness-bar">
+									<div class="brightness-icon"></div>
+									<div class="brightness-text">Nền tối</div>
+									<div class="brightness-button"></div>
+								</a>
+							</div>
+							<div class="vip-container">
+								<div class="vip-button-wrapper">
+									<a href="#" class="vip-button">Mua Vip Ngay</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-container">
+			<ul class="top-menu">
+				<li class="list-default" style="padding-left: 0;"><a class="current-page main-menu" href="#">TRANG CHỦ</a></li>
+				<li class="list-default">
+					<a class="main-menu" href="#">#ZINGCHART</a>
+					<div class="sub-menu-container">
+						<ul class="sub-menu">
+							<li><a class="title" href="#">#ZINGCHART</a></li>
+							<li><a class="hover-element" href="#">Bài hát</a></li>
+							<li><a class="hover-element" href="#">MV</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">TUẦN</a></li>
+							<li><a class="hover-element" href="#">Bài hát</a></li>
+							<li><a class="hover-element" href="#">MV</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">US-UK-CHART</a></li>
+							<li><a class="hover-element" href="#">Bài hát</a></li>
+							<li><a class="hover-element" href="#">MV</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">KPOP CHART</a></li>
+							<li><a class="hover-element" href="#">Bài hát</a></li>
+							<li><a class="hover-element" href="#">MV</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list-default">
+					<a class="main-menu" href="#">TOP 100</a>
+					<div class="sub-menu-container">
+						<ul class="sub-menu">
+							<li><a class="title" href="#">VIỆT NAM</a></li>
+							<li><a class="hover-element" href="#">Nhạc Trẻ</a></li>
+							<li><a class="hover-element" href="#">Nhạc Trữ Tình</a></li>
+							<li><a class="hover-element" href="#">Quê Hương</a></li>
+							<li><a class="hover-element" href="#">Rock Việt</a></li>
+							<li><a class="hover-element" href="#">Dance Việt</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">ÂU MỸ</a></li>
+							<li><a class="hover-element" href="#">POP</a></li>
+							<li><a class="hover-element" href="#">ROCK</a></li>
+							<li><a class="hover-element" href="#">Rap / Hip Hop</a></li>
+							<li><a class="hover-element" href="#">R&B/Soul</a></li>
+							<li><a class="hover-element" href="#">Audiophile</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">CHÂU Á</a></li>
+							<li><a class="hover-element" href="#">Hàn QUốc</a></li>
+							<li><a class="hover-element" href="#">Nhật Bản</a></li>
+							<li><a class="hover-element" href="#">Hoa Ngữ</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">HÒA TẤU</a></li>
+							<li><a class="hover-element" href="#">Classical</a></li>
+							<li><a class="hover-element" href="#">Piano</a></li>
+							<li><a class="hover-element" href="#">Guitar</a></li>
+							<li><a class="hover-element" href="#">Violin</a></li>
+							<li><a class="hover-element" href="#">Cello</a></li>
+							<li><a class="hover-element" href="#">Saxophone</a></li>
+							<li><a class="hover-element" href="#">Nhạc cụ khác</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list-default">
+					<a class="main-menu" href="#">CHỦ ĐỀ</a>
+					<div class="sub-menu-container">
+						<ul class="sub-menu">
+							<li><a class="title" href="#">ĐỀ XUẤT</a></li>
+							<li><a class="hover-element" href="#">Nhạc Hot</a></li>
+							<li><a class="hover-element" href="#">Những Bài Hit</a></li>
+							<li><a class="hover-element" href="#">Nhạc Việt Bất Hủ</a></li>
+							<li><a class="hover-element" href="#">Nhạc Bất Hủ Âu Mỹ</a></li>
+							<li><a class="hover-element" href="#">K-Pop HIT</a></li>
+							<li><a class="hover-element" href="#">Nhạc Thúy Nga</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">THỂ LOẠI</a></li>
+							<li><a class="hover-element" href="#">EDM</a></li>
+							<li><a class="hover-element" href="#">Acoustic</a></li>
+							<li><a class="hover-element" href="#">Indie</a></li>
+							<li><a class="hover-element" href="#">Nhạc Không Lời</a></li>
+							<li><a class="hover-element" href="#">Trữ Tình & Bolero</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">TÂM TRẠNG</a></li>
+							<li><a class="hover-element" href="#">Những Ngày Mưa</a></li>
+							<li><a class="hover-element" href="#">Tình Yêu</a></li>
+							<li><a class="hover-element" href="#">Giai Điệu Buồn</a></li>
+							<li><a class="hover-element" href="#">Âm Nhạc Thư Giản</a></li>
+							<li><a class="hover-element" href="#">Motivation</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">HOẠT ĐỘNG</a></li>
+							<li><a class="hover-element" href="#">Tập Trung</a></li>
+							<li><a class="hover-element" href="#">Spa-Yoga</a></li>
+							<li><a class="hover-element" href="#">Cà Phê</a></li>
+							<li><a class="hover-element" href="#">Weekend</a></li>
+							<li><a class="hover-element" href="#">Party</a></li>
+							<li><a class="hover-element" href="#">Du Lịch</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list-default">
+					<a class="main-menu" href="#">MV</a>
+					<div class="sub-menu-container">
+						<ul class="sub-menu">
+							<li><a class="title" href="#">VIỆT NAM</a></li>
+							<li><a class="hover-element" href="#">Nhạc Trẻ</a></li>
+							<li><a class="hover-element" href="#">Nhạc Trữ Tình</a></li>
+							<li><a class="hover-element" href="#">Quê Hương</a></li>
+							<li><a class="hover-element" href="#">Rock Việt</a></li>
+							<li><a class="hover-element" href="#">Dance Việt</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">ÂU MỸ</a></li>
+							<li><a class="hover-element" href="#">POP</a></li>
+							<li><a class="hover-element" href="#">ROCK</a></li>
+							<li><a class="hover-element" href="#">Rap / Hip Hop</a></li>
+							<li><a class="hover-element" href="#">R&B/Soul</a></li>
+							<li><a class="hover-element" href="#">Audiophile</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">CHÂU Á</a></li>
+							<li><a class="hover-element" href="#">Hàn QUốc</a></li>
+							<li><a class="hover-element" href="#">Nhật Bản</a></li>
+							<li><a class="hover-element" href="#">Hoa Ngữ</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">HÒA TẤU</a></li>
+							<li><a class="hover-element" href="#">Classical</a></li>
+							<li><a class="hover-element" href="#">Piano</a></li>
+							<li><a class="hover-element" href="#">Guitar</a></li>
+							<li><a class="hover-element" href="#">Violin</a></li>
+							<li><a class="hover-element" href="#">Cello</a></li>
+							<li><a class="hover-element" href="#">Saxophone</a></li>
+							<li><a class="hover-element" href="#">Nhạc cụ khác</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list-default">
+					<a class="main-menu" href="#">ALBUM</a>
+					<div class="sub-menu-container">
+						<ul class="sub-menu">
+							<li><a class="title" href="#">VIỆT NAM</a></li>
+							<li><a class="hover-element" href="#">Nhạc Trẻ</a></li>
+							<li><a class="hover-element" href="#">Nhạc Trữ Tình</a></li>
+							<li><a class="hover-element" href="#">Quê Hương</a></li>
+							<li><a class="hover-element" href="#">Rock Việt</a></li>
+							<li><a class="hover-element" href="#">Dance Việt</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">ÂU MỸ</a></li>
+							<li><a class="hover-element" href="#">POP</a></li>
+							<li><a class="hover-element" href="#">ROCK</a></li>
+							<li><a class="hover-element" href="#">Rap / Hip Hop</a></li>
+							<li><a class="hover-element" href="#">R&B/Soul</a></li>
+							<li><a class="hover-element" href="#">Audiophile</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">CHÂU Á</a></li>
+							<li><a class="hover-element" href="#">Hàn QUốc</a></li>
+							<li><a class="hover-element" href="#">Nhật Bản</a></li>
+							<li><a class="hover-element" href="#">Hoa Ngữ</a></li>
+						</ul>
+						<ul class="sub-menu">
+							<li><a class="title" href="#">HÒA TẤU</a></li>
+							<li><a class="hover-element" href="#">Classical</a></li>
+							<li><a class="hover-element" href="#">Piano</a></li>
+							<li><a class="hover-element" href="#">Guitar</a></li>
+							<li><a class="hover-element" href="#">Violin</a></li>
+							<li><a class="hover-element" href="#">Cello</a></li>
+							<li><a class="hover-element" href="#">Saxophone</a></li>
+							<li><a class="hover-element" href="#">Nhạc cụ khác</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list-default">
+					<a class="main-menu" href="#">NGHỆ SĨ</a>
+					<div class="sub-menu-container" style="width: 130px;">
+						<ul class="sub-menu">
+							<li><a class="hover-element" href="#">Việt Nam</a></li>
+							<li><a class="hover-element" href="#">Âu Mỹ</a></li>
+							<li><a class="hover-element" href="#">Hàn QUốc</a></li>
+							<li><a class="hover-element" href="#">Nhật Bản</a></li>
+							<li><a class="hover-element" href="#">Hoa Ngữ</a></li>
+							<li><a class="hover-element" href="#">Hòa Tấu</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="list-default"><a class="main-menu" href="#">NHẠC CÁ NHÂN</a></li>
+				<li class="list-default" style="padding: 4px;">
+					<a class="main-menu" href="#">
+						<div class="icon-vip"></div>
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="slideshow-container">
+	    		<div class="slides">
+			    	<a href="#" class="slide">
+			    		<img src="./picture/pic-1.jpg" >
+			    	</a>    
+			    	<a href="#" class="slide">
+			    		<img src="./picture/pic-2.jpg" >
+			    	</a>    
+			    	<a href="#" class="slide">
+			    		<img src="./picture/pic-3.jpg" >
+			    	</a>    
+			    	<a href="#" class="slide">
+			    		<img src="./picture/pic-4.jpg" >
+			    	</a>    
+			    	<a href="#" class="slide">
+			    		<img src="./picture/pic-5.jpg" >
+			    	</a>  
+	    		</div>  
+			</div>
+			<div class="z-chart-container">
+				<div class="week-chart">
+					<div class="real-time">
+						<div class="top">
+							<a href="#" class="zingchart-button">
+								#zingchart
+							</a>
+							<div class="day-and-time" id="timer"></div>
+							<a href="#" class="play-all-button">
+								<div class="play-button"></div>
+								<div class="text">Nghe tất cả</div>
+							</a>
+						</div>
+						<div class="center"></div>
+						<div class="bottom">
+							<span>12</span>
+							<span>14</span>
+							<span>16</span>
+							<span>18</span>
+							<span>20</span>
+							<span>22</span>
+							<span>00</span>
+							<span>02</span>
+							<span>04</span>
+							<span>06</span>
+							<span>08</span>
+							<span>10</span>
+						</div>
+					</div>
+					<div class="items">
+						<div class="zing-chart-item">
+							<div class="number" style="color:#4a90e2;">01</div>
+							<a href="#" class="banner">
+								<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+								<span class="overlay">
+								</span>
+								<span class="play-button"></span>
+							</a>
+							<div class="info">
+								<div class="title-wrapper">
+									<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+								</div>
+								<div class="artist-wrapper">
+									<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+								</div>
+							</div>
+							<div class="percent" style="color:#4a90e2;">39%</div>
+						</div>
+						<div class="zing-chart-item">
+							<div class="number" style="color:#50e3c2;">02</div>
+							<a href="#" class="banner">
+								<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+								<span class="overlay">
+								</span>
+								<span class="play-button"></span>
+							</a>
+							<div class="info">
+								<div class="title-wrapper">
+									<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+								</div>
+								<div class="artist-wrapper">
+									<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+								</div>
+							</div>
+							<div class="percent" style="color:#50e3c2;">35%</div>
+						</div>
+						<div class="zing-chart-item">
+							<div class="number" style="color:#e4340d;">03</div>
+							<a href="#" class="banner">
+								<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+								<span class="overlay">
+								</span>
+								<span class="play-button"></span>
+							</a>
+							<div class="info">
+								<div class="title-wrapper">
+									<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+								</div>
+								<div class="artist-wrapper">
+									<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+								</div>
+							</div>
+							<div class="percent" style="color:#e4340d;">26%</div>
+						</div>
+						<div class="zing-chart-item">
+							<div class="number">04</div>
+							<a href="#" class="banner">
+								<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+								<span class="overlay">
+								</span>
+								<span class="play-button"></span>
+							</a>
+							<div class="info">
+								<div class="title-wrapper">
+									<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+								</div>
+								<div class="artist-wrapper">
+									<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+								</div>
+							</div>
+						</div>
+						<div class="zing-chart-item">
+							<div class="number">05</div>
+							<a href="#" class="banner">
+								<img class="zing-chart-img" src="./picture/pic-1-zing-chart.jpg">
+								<span class="overlay">
+								</span>
+								<span class="play-button"></span>
+							</a>
+							<div class="info">
+								<div class="title-wrapper">
+									<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+								</div>
+								<div class="artist-wrapper">
+									<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+								</div>
+							</div>
+						</div>
+						<div class="text">
+							<a href="#">Xem tất cả</a>
+						</div>
+					</div>
+				</div>
+			<div class="countries">
+				<a href="#" class="country">
+					<img class="country-song" src="./picture/song-vn-2x.jpg">
+				</a>
+				<a href="#" class="country res-country">
+					<img class="country-song" src="./picture/song-vn-2x.jpg">
+				</a>
+				<a href="#" class="country">
+					<img class="country-song" src="./picture/song-vn-2x.jpg">
+				</a>
+				<a href="#" class="country res-country" style="margin-right: 0;">
+					<img class="country-song" src="./picture/song-vn-2x.jpg">
+				</a>
+			</div>
+			</div>
+<!-- 			<div class="new-song-container">
+				<div class="new-song">
+					<a href="#" class="banner">
+						<img class="new-song-img" src="./picture/new-song-avt.jpg">
+						<span class="overlay">
+						</span>
+						<span class="play-button"></span>
+					</a>
+					<div class="info">
+						<div class="title-wrapper">
+							<a href="#" class="title" title="Vì Sao Anh Cố Giấu">Vì Sao Anh Cố </a>
+						</div>
+						<div class="artist-wrapper">
+							<a href="#" class="artist" title="Hương Tràm">Hương Tràm</a>
+						</div>
+						<div class="extension">
+							<a href="#" class="heart-button">
+								<i title="Thích" class="far fa-heart"></i>
+							</a>
+							<a href="#" class="more-button">
+								<i title="Khác" class="fas fa-ellipsis-h"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div> -->	
+		</div>
+<!-- 		<div class="sidebar">Sidebar</div>
+		<div class="footer">Footer</div> -->
+	</div>
+	<script src="https://kit.fontawesome.com/0433a56163.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var clickBtn = document.getElementById('click-btn');
+		clickBtn.addEventListener('click', showOnMenu);
+
+		function showOnMenu() {
+			document.getElementById('sub-menu-login').style.display = 'block';
+			document.getElementById('change-icon').innerHTML = '<i class="fas fa-angle-up" style="cursor: pointer;" id="click-btn"></i>';
+				var showOff = document.getElementById('click-btn');
+				showOff.addEventListener('click', showOffMenu);
+		}
+
+		function showOffMenu() {
+			document.getElementById('sub-menu-login').style.display = 'none';
+			document.getElementById('change-icon').innerHTML = '<i class="fas fa-angle-down" style="cursor: pointer;" id="click-btn"></i>';
+			var showOn = document.getElementById('click-btn');
+			showOn.addEventListener('click', showOnMenu);
+		}	
+	</script>
+</body>
+</html>

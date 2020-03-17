@@ -1,0 +1,22 @@
+
+.search-input .fas {
+	position: absolute;
+	margin: 6px 5px;
+}
+
+.search-input .search-content {
+	padding: 8px 25px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	width: 560px;
+}
+
+.search-input .search-content::placeholder {
+	font-size: 12px;
+}
+
+.search-input .search-content:focus {
+	outline-color: #ccc;
+	outline-width: 0px;
+}
+

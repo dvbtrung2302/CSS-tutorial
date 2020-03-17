@@ -1,0 +1,15 @@
+.list-item {
+	border: 1px solid red;
+	padding: 20px;
+	font-family: sans-serif;
+	color: #FFF;
+	margin: 20px;	
+}
+
+.list-item-parallax {
+	background-image: url(./background.jpg);
+	height: 200px;
+	background-size: cover;
+	background-position: 0 -300px;
+	background-attachment: fixed;
+}

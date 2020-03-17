@@ -1,0 +1,23 @@
+
+.default-link {
+	font-family: sans-serif;
+    background: #175B8B;
+    color: #FFF;
+    padding: 10px 15px;
+}
+
+.default-link:link {
+	text-decoration: none;
+}
+
+.default-link:visited {
+}
+
+.default-link:hover {
+	background: #042339;
+
+}
+
+.default-link:active {
+	color: red;
+}

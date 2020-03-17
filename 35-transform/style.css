@@ -1,0 +1,47 @@
+
+.button {
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: #333;
+	padding: 8px 16px;
+	background-color: #DDD;
+	display: inline-block;
+	transition: all 0.5s;
+}
+
+.button:hover {
+	color: #FFF;
+	background-color: #7596ae;
+}
+
+.album-cover {
+	width: 200px;
+	height: 200px;
+	background-image: url('https://picsum.photos/seed/picsum/200/200');
+	transition: all 0.2s;
+}
+
+.album-cover .overlay {
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+
+.album-cover:hover .overlay {
+	opacity: 1;
+}
+
+.album-cover .overlay .play-button {
+	width: 30%;
+	transform: scale(0);
+	transition: all 0.8s;
+}
+
+.album-cover:hover .overlay .play-button {
+	transform: scale(1);
+}

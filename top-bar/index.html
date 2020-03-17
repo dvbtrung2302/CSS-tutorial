@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://kit.fontawesome.com/0433a56163.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<div class="zing-logo"></div>
+		<div class="search-bar">
+			<div class="search-input">
+				<form>
+					<i class="fas fa-search" style="color: #8d9298;"></i>
+					<input class="search-content" type="text" name="search" placeholder="Nhập tên bài hát, ca sĩ hoặc mv....">
+				</form>
+			</div>
+		</div>
+		<div class="login-bar">
+			<div class="container-login">
+				<div class="login-bar">
+					<div>
+						<a href="#" >
+							<img class="avatar" src="./picture/avatar.png">
+						</a>
+					</div>
+					<div>
+						<a href="#" class="text">Đăng Nhập</a>
+					</div>
+					<div class="dropdown-icon">
+						<div id="change-icon">
+							<i class="fas fa-angle-down" style="cursor: pointer;" onclick="showOnMenu()"></i>
+						</div>
+					</div>
+				</div>
+				<div class="sub-login" id="sub-menu-login">
+					<div class="brightness-container">
+						<a href="#" class="brightness-bar">
+							<div class="brightness-icon"></div>
+							<div class="brightness-text">Nền tối</div>
+							<div class="brightness-button"></div>
+						</a>
+					</div>
+					<div class="vip-container">
+						<div class="vip-button-wrapper">
+							<a href="#" class="vip-button">Mua Vip Ngay</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/0433a56163.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function showOnMenu() {
+			document.getElementById('sub-menu-login').style.display = 'block';
+			document.getElementById('change-icon').innerHTML = '<i class="fas fa-angle-up" style="cursor: pointer;" onclick="showOffMenu()"></i>';
+		}
+		function showOffMenu() {
+			document.getElementById('sub-menu-login').style.display = 'none';
+			document.getElementById('change-icon').innerHTML = '<i class="fas fa-angle-down" style="cursor: pointer;" onclick="showOnMenu()"></i>';
+
+		}
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation: slide-it 30s infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide-it {
+   0%,19%   { transform: translateX(0%); }
+   20%,39% { transform: translateX(-100%); }
+   40%,59% { transform: translateX(-200%); }
+   60%,79% { transform: translateX(-300%); }
+   80%,99% { transform: translateX(-400%); }
+ }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./icon/css/all.css">
+</head>
+<body>
+	<div class="main-album-slider">
+		<div class="main-album-title">
+			<a href="#" class="title-wrapper">
+				<span class="title-text">
+					Cà Phê Ấm Cho Ngày Đông
+				</span>
+				<i class="fal fa-angle-right fa-2x"></i>
+			</a>
+		</div>
+		<a href="#" class="control">
+			<i id="control-back"class="fal fa-angle-left fa-2x"></i>
+			<i id="control-next" class="fal fa-angle-right fa-2x" style="color:#32323d;"></i>
+		</a>
+
+		<div class="main-album-items">
+			<div class="album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="fade album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="fade album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+			<div class="fade album-container">
+				<a href="#" class="album">
+					<div class="background">
+						<img src="./picture/pic-1.jpg" class="background-img">
+					</div>
+					<div class="overlay">
+					</div>
+					<div class="play-button"></div>
+				</a>
+				<a href="#" title="AAAA" class="content">Những Bản Hits Không Dành Cho Nhau</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var nextButton = document.getElementById('control-next');
+		var backButton = document.getElementById('control-back');
+		var slides = document.getElementsByClassName('album-container')
+		nextButton.addEventListener('click', nextSlide);
+		backButton.addEventListener('click', backSlide);
+		nextButton.addEventListener('mouseover', mouseOverNext);
+		nextButton.addEventListener('mouseout', mouseOutNext);
+		backButton.addEventListener('mouseover', mouseOverBack);
+		backButton.addEventListener('mouseout', mouseOutBack);
+
+		function nextSlide() {
+			for (var slide of slides ) {
+				slide.style.transform = 'translateX(-330%)';
+				slide.style.opacity = '1';
+			}
+			nextButton.style.color = '#e5e5e5';
+			nextButton.style.cursor = 'default';
+			backButton.style.color = '#32323d';
+			backButton.style.cursor = 'pointer';
+		}
+
+		function backSlide() {
+			for (var slide of slides ) {
+				slide.style.transform = 'translateX(0)';
+			}
+			backButton.style.color = '#e5e5e5';
+			backButton.style.cursor = 'default';
+			nextButton.style.color = '#32323d';
+			nextButton.style.cursor = 'pointer';
+		}
+
+		function mouseOverNext() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(229, 229, 229)'){
+				nextButton.style.color = '#e5e5e5';
+			} else {
+				nextButton.style.color = '#6335b4';
+			}
+		}
+
+		function mouseOutNext() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(229, 229, 229)'){
+				nextButton.style.color = '#e5e5e5';
+			} else {
+				nextButton.style.color = '#32323d';
+			}
+		}
+
+		function mouseOverBack() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(50, 50, 61)'){
+				backButton.style.color = '#e5e5e5';
+			} else {
+				backButton.style.color = '#6335b4';
+			}
+		}
+
+		function mouseOutBack() {
+			var currentColor = window.getComputedStyle(nextButton, null).getPropertyValue('color');
+			if (currentColor == 'rgb(50, 50, 61)'){
+				backButton.style.color = '#e5e5e5';
+			} else {
+				backButton.style.color = '#32323d';
+			}
+		}
+	</script>
+</body>
+</html>

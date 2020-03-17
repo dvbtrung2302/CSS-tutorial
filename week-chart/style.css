@@ -1,0 +1,277 @@
+* {
+	font-family: sans-serif;
+}
+
+.week-chart {
+	grid-column: 3/11;
+	background-color: #DDD;
+	background-image: url('./picture/bg-chart-2.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+
+/*===============REALTIME===============*/
+
+.week-chart .real-time {
+	flex-grow: 3;
+	background-image: url('./picture/bg-chart.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	border-radius: 3px;
+
+}
+
+.real-time .top {
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.top .zingchart-button  {
+	background: linear-gradient(to right,#3321ba,#8d4fe2);
+	border-radius: 12px;
+	text-decoration: none;
+	color: #fcfcfc;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 4px 12px;
+}
+
+.top .zingchart-button:hover {
+	background: #fcfcfc;
+	color: #65509e;
+}
+
+.top .day-and-time {
+	color: #fcfcfc;
+	font-size: 15px;
+	margin-left: 20px;
+	flex-grow: 1;
+}
+
+.top .play-all-button {
+	text-decoration: none;
+	color: #fcfcfc;
+	display: flex;
+	padding: 9px 15px;
+	background-color: #65509e;
+	border-radius: 5px;
+	align-items: center;
+}
+
+.play-all-button .play-button {
+	background-image: url('./picture/play-button-arrowhead.svg');
+	background-position: center;
+	background-size: 13px;
+	background-repeat: no-repeat;
+	width: 13px;
+	height: 13px;
+}
+
+.play-all-button .text {
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+.play-all-button:hover {
+	background-color: #fcfcfc;
+	color: #65509e;
+}
+
+.play-all-button:hover .play-button {
+	background-image: url('./picture/play-button-arrowhead-2.svg');
+ 	
+}
+.real-time .center {
+	width: 100%;
+	flex-grow: 3;
+	height: 200px;
+}
+.real-time .bottom {
+	width: 100%;
+	flex-grow: 1;
+	color: rgb(162, 162, 162);
+	cursor: default;
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
+}
+
+
+/*================ITEMS=================*/
+
+.week-chart .items {
+	flex-grow: 1;
+	padding: 20px 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.zing-chart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin: 0 15px;
+}
+
+.zing-chart-item .number {
+  color: #fcfcfc;
+  font-size: 20px;
+}
+
+.zing-chart-item .banner {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  position: relative;
+}
+
+.banner .zing-chart-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.banner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  border-radius: 3px;
+}
+
+.banner .play-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('./picture/play-button-arrowhead.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+  opacity: 0;
+  border-radius: 3px;
+}
+
+.zing-chart-item .info {
+  position: relative;
+  flex-grow: 1;
+}
+
+.info .title-wrapper, .info .artist-wrapper {
+  display: inline-block;  
+}
+
+.info .title-wrapper {
+  width: 100%;
+  text-decoration: none;
+}
+
+.title-wrapper .title {
+  cursor: default;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.artist-wrapper .artist {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.zing-chart-item .percent {
+  font-size: 15px;
+}
+
+.zing-chart-item:hover {
+  background-color: rgba(255,255,255,.15);
+  border-radius: 3px;
+}
+
+.zing-chart-item:hover .overlay, .zing-chart-item:hover .play-button {
+  opacity: 1;
+}
+
+.zing-chart-item:hover .title {
+	color: #6e55b4;
+}
+
+.artist-wrapper .artist:hover {
+	color: #6e55b4;
+}
+
+.items .text {
+	align-self: center;
+	margin-top: 20px;
+}
+
+.items .text a {
+	text-decoration: none;
+	color: #fcfcfc;
+	font-size: 13px;
+}
+/*===============COUNTRIES===============*/
+.countries {	
+  	display: flex;
+  	grid-column: 3/11; 
+}
+
+.country {
+	height: 60px;
+	flex-basis: 25%;
+	overflow: hidden;
+	margin-right: 30px;
+	border-radius: 3px;
+}
+
+.country-song {
+	width: 100%;
+	height: 100%;
+	transition: all 0.6s;
+}
+.countries .country:hover .country-song {
+	transform: scale(1.05);
+}
+	
+@media (max-width: 800px) {
+	.week-chart {
+		flex-direction: column;
+		height: auto;
+	}
+	.countries {
+		margin-top: 20px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.country {
+		margin-right: 0;
+		flex-basis: 49%;
+		height: 90px;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+
+	.res-country {
+		margin: 0;
+	}
+}

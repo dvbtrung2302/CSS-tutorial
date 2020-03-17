@@ -1,0 +1,120 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+.zing-choice-slider {
+	grid-column: 3/11;
+}
+
+.zing-choice-slider .zing-choice-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.zing-choice-container .zing-choice-wrapper {
+	flex-shrink: 0;
+	width: 34%;
+	animation: zing-choice-slide 30s ease-out infinite;
+  	animation-timing-function: ease-out;
+}
+
+.zing-choice-container .zing-choice-item {
+    background: url('./picture/spotlight-bg.jpg'); 
+    background-size: cover;
+    display: flex;
+    margin-right: 15px;
+}
+
+.zing-choice-container .zing-choice-item:before {
+    display: block;
+    content: "";
+    padding-top: 0%;
+}
+
+.zing-choice-item .artist-banner {
+    padding: 20px 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.artist-banner .image-wrapper {
+    display: block;
+    width: 70%;
+    height: 80%;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.image-wrapper .artist-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: all 0.6s
+}
+
+.zing-choice-item .info {
+    width: 50%;
+}
+
+.info .info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.info-wrapper .zing-choice-button {
+    width: 70%;
+    background: linear-gradient(to right,#f508b7,#9102ff);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 3px 0;
+    color: #fcfcfc;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.zing-choice-button .button-text {
+    font-size: 0.8vw;
+    font-weight: 600;
+    padding-left: 3px;
+}
+.zing-choice-button .fa-star {
+    font-size: 0.8vw;
+}
+
+.info-wrapper .artist-name {
+    width: 70%;
+    text-align: right;
+}
+
+.artist-name .artist-text {
+    color: #32323d;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+/*=========HOVER EFFECT===================*/
+.zing-choice-wrapper:hover .artist-image {
+    transform: scale(1.1);
+}
+
+.artist-name .artist-text:hover {
+    color: #6e55b4;
+}
+/*========SLIDER========================*/
+@keyframes zing-choice-slide {
+	0%,32%   { transform: translateX(0%); }
+	33%,65% { transform: translateX(-300%); }
+	66%,98% { transform: translateX(-600%); }
+ }	

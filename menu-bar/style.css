@@ -1,0 +1,94 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.menu-container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+
+.menu-container .top-menu {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+	grid-column: 3/13;
+}
+
+.menu-container .top-menu .main-menu {
+	text-decoration: none;
+	color: #32323d;
+}
+.top-menu .current-page {
+	color: #65509e!important;
+	border-bottom: 2px solid #65509e;
+}
+
+.top-menu .list-default{
+	padding: 8px 16px;
+}
+
+.top-menu .list-default .main-menu{
+	padding: 15px 0px;
+}
+
+.top-menu .list-default .main-menu:hover {
+	color: #65509e;
+	border-bottom: 2px solid #65509e;
+}
+
+.sub-menu-container {
+	border: 1px solid #FFF;
+	width: 100%;
+	display: flex;
+	margin-top: 15px;
+	padding: 15px 0;
+	display: none;
+	position: absolute;
+	max-width: 600px;
+}
+
+.sub-menu-container .sub-menu {
+	padding: 0;
+	flex-grow: 1;
+}
+
+.sub-menu-container .sub-menu li {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+.sub-menu-container .sub-menu li .hover-element, .title {
+	text-decoration: none;
+	display: block;
+	color: #32323d;
+	padding: 5px 10px;
+}
+
+.sub-menu li .hover-element:hover {
+	color: #65509e;
+	background-color: #efefef;
+}
+
+.sub-menu .title {
+	font-weight: bold;
+	text-decoration: none;
+	color: #32323d;
+}
+
+.list-default:hover .sub-menu-container {
+	display: flex;
+}
+
+.list-default .icon-vip {
+	background-image: url('./picture/vip-button.svg');
+	height: 25px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+.list-default .icon-vip:hover {
+	opacity: .8;
+}

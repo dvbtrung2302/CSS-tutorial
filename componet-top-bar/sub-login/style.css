@@ -1,0 +1,65 @@
+.sub-login {
+	padding: 0 10px;
+}
+
+.sub-login a {
+	text-decoration: none;
+	color: #000;
+}
+
+.brightness-bar {
+	display: flex;
+	align-items: center;
+}
+
+.brightness-bar .brightness-icon {
+	border: 1px solid #FFF;
+	background-color: rgb(160, 160, 160);
+	border-radius: 20px;
+	width: 25px;
+	height: 25px;
+	background-image: url('./picture/moon.svg');
+	background-size: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.brightness-bar .brightness-text {
+	flex-grow: 1;
+	margin-left: 10px;
+}
+.brightness-bar .brightness-button {
+	width: 25px;
+	height: 25px;
+	background-image: url('./picture/switch-off.svg');
+	background-size: cover;
+}
+
+.sub-login .brightness-bar:hover {
+	color: #65509e;
+    background-color: #efefef;
+}
+
+.sub-login .brightness-bar:hover .brightness-icon{
+	background-color: #65509e;
+}
+
+.vip-button-wrapper {
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.vip-button-wrapper .vip-button {
+	border: 1px solid #DDD;
+	background-color: #f8e71c;
+	border-radius: 5px;
+    color: #32323d;
+    padding: 10px 10px;
+}
+
+.vip-button-wrapper .vip-button:hover {
+	background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    color: #6e55b4;
+     box-shadow: 0 0 6px #AAA;
+}
